@@ -20,7 +20,7 @@ Simple TCP daytime client code in C
 
 int main(int argc, char *argv[])
 {
-    struct sockaddr_in serveraddr;
+	struct sockaddr_in serveraddr;
     char buf[MAX_LINE];
     char *host;
     struct hostent *hp;
