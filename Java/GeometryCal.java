@@ -1,14 +1,11 @@
-/*------------------------------------------------------------------------
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  A program to calculate the area of differnt shapes.
-------------------------------------------------------------------------*/
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-// Import statement for the Scanner class
 import java.util.Scanner;
 import java.util.Random;
 
 public class GeometryCal{
-    //Globel Variables (ones that can be used by all methods)
-    //Create a Scanner object to read input.
     public static Scanner keyboard = new Scanner(System.in); 
 
 // -------------------- Main --------------------   
@@ -22,18 +19,18 @@ public class GeometryCal{
 		} while(c != 4);    
     }
 
-// -------------------- Methods --------------------
-//method to display menu and prompt user for choice  
-  public static int getChoice(){
-        System.out.println("\nThis is a Geometry calculator. Choose what you would like to calculate.");
-        System.out.println("1. Find the area of a circle");
-        System.out.println("2. Find the area of a rectangle");
-        System.out.println("3. Find the area of a triangle");
-        System.out.print(">>(type 1, 2, 3, or 4): ");
-        return keyboard.nextInt(); //return the user's choice
+	// -------------------- Methods --------------------
+	//method to display menu and prompt user for choice  
+	public static int getChoice(){
+		System.out.println("\nThis is a Geometry calculator. Choose what you would like to calculate.");
+		System.out.println("1. Find the area of a circle");
+		System.out.println("2. Find the area of a rectangle");
+		System.out.println("3. Find the area of a triangle");
+		System.out.print(">>(type 1, 2, 3, or 4): ");
+		return keyboard.nextInt(); //return the user's choice
     }
     
-//method to take in and process user's choice  
+	//method to take in and process user's choice  
     public static void processChoice(int c){
         double area = 0;  //the value returned from the methods
         double r;  //the radius of the circle
@@ -74,19 +71,19 @@ public class GeometryCal{
         }
     }
     
-//method to calculate the area of a circle    
+	//method to calculate the area of a circle    
     public static double circleArea(double r){
         return Math.PI * (r * r);
     }
    
 
-//method to calculate the area of a rectangle    
+	//method to calculate the area of a rectangle    
     public static double rectangleArea(double l, double w){
         return l * w;
     }
     
 
-//method to calculate the area of a triangle    
+	//method to calculate the area of a triangle    
     public static double triangleArea(double h, double b){
         return 0.5 * b * h;
     }
