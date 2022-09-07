@@ -1,19 +1,5 @@
 /*------------------------------------------------------------------------
-Name: Jennifer Olszyna     
-Student ID: 006439880002    
-Email: jolszyna@una.edu    
-Course Information: CIS 315-03    
-Program Source File Name: GeometryCal.java    
-Programming Assignment: Project 2    
-Program Description: A program to calculate the area of differnt shapes.
-References: PowerPoints
-Due Date: 10/22/21 at 11:59pm   
-
-In keeping with the honor code policies of the University of University of 
-North Alabama, the School of Business, and the Department of Computer 
-Science, I affirm that I have neither given nor received on this programming 
-assignment. This assignmentrepresents my individual, original effort. 
-... My Signature is on File.
+ A program to calculate the area of differnt shapes.
 ------------------------------------------------------------------------*/
 
 // Import statement for the Scanner class
