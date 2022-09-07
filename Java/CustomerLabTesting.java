@@ -1,20 +1,5 @@
 /*------------------------------------------------------------------------
-Name: Jennifer Olszyna     
-Student ID: 006439880002    
-Email: jolszyna@una.edu    
-Course Information: CIS 315-03    
-Program Source File Name: CustomerLabTesting.java    
-Programming Assignment: Project 3    
-Program Description:  Program to manage a clinic's customers 
-and their payments. 
-References: PowerPoints
-Due Date: 12/7/21 at 11:59pm   
-
-In keeping with the honor code policies of the University of University of 
-North Alabama, the School of Business, and the Department of Computer 
-Science, I affirm that I have neither given nor received on this programming 
-assignment. This assignmentrepresents my individual, original effort. 
-... My Signature is on File.
+Program to manage a clinic's customers and their payments. 
 ------------------------------------------------------------------------*/
 
 // Import statement for the Scanner class
