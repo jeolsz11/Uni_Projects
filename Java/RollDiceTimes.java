@@ -1,20 +1,16 @@
-/*------------------------------------------------------------------------
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 A program to roll a pair of standard die.
-------------------------------------------------------------------------*/
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-// Import statement for the Scanner class
 import java.util.Scanner;
 import java.util.Random;
 
 public class RollDiceTimes{
 	public static void main(String[] args){
-
-		// Declare variable for the input
 		char cont;
 		int a,b;	
 		Random rand = new Random();
-
-	 	// Create a Scanner object to read input.	
+		
 		Scanner keyboard = new Scanner(System.in);
 
 		do{
@@ -26,9 +22,9 @@ public class RollDiceTimes{
 				System.out.println( "   " + a + " " +  b);
 			}
 			// Prompt the user for information
-        			System.out.println(">> Roll them again (y = yes)?: ");
-       			    cont = keyboard.next().toCharArray()[0];
-       			    cont = Character.toLowerCase(cont);
+        		System.out.println(">> Roll them again (y = yes)?: ");
+				cont = keyboard.next().toCharArray()[0];
+				cont = Character.toLowerCase(cont);
 		} while(cont=='y');    
     }
 }
