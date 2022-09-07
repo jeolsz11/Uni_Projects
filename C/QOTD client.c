@@ -1,11 +1,7 @@
-/*
- * Name: Jennifer Olszyna
- * Course-Section: CS 360 01, Spring 2021
- * Assignment: 8
- * Collaborators: none
- * Resources: Dr. Jerkins, past programs
- * Description: CLIENT; Quote of the Day
- ------------------------------------------------------------------------------*/
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Client side of the "Quote of the Day" system
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
 #include <sys/socket.h>
 #include <sys/select.h>
 #include <sys/time.h>
