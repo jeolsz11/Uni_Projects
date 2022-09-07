@@ -98,7 +98,6 @@ int main (int argc, char *argv[]) {
 }
 
 void send_request (struct client_state *xferstate, const char *filename) {
-//-------------- Code Additions Begin --------------
     size_t getRequest;
     int sigCheck;
     char* buf;
@@ -125,7 +124,6 @@ void send_request (struct client_state *xferstate, const char *filename) {
     	    xferstate->retries++;
     	}
     }
-//-------------- Code Additions End --------------
 }
 
 void transfer_data (struct client_state *xferstate) {
@@ -193,7 +191,6 @@ void process_datagram (struct client_state *xferstate) {
    if (op_code == OP_ERR) {
       transfer_complete = true
    }
-//-------------- Code Additions End --------------
 }
 
 void sig_handler (int sig) {
@@ -228,9 +225,9 @@ void resend_ack (struct client_state *xferstate) {
       xferstate->retries++;
       free (packet);
       alarm (TIMEOUT);
-    }
+  }
   else {
       printf ("\nTransfer timed out\n");
       transfer_complete = true;
-    }
+  }
 }
