@@ -1,6 +1,12 @@
-import java.io.File;  // Import the File class
-import java.io.FileNotFoundException;  // Import this class to handle errors
-import java.util.Scanner; // Import the Scanner class to read text files
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Simple text based game of hangman 
+Note: you need to have the text document with the word bank in 
+the same folder
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+import java.io.File;
+import java.io.FileNotFoundException; 
+import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 
