@@ -98,6 +98,6 @@ int main(int argc, char *argv[]) {
 }
 
 void cleanup_exit (int sig) {
-	//handle sigterm
+    //handle sigterm
 	shut_down = true;
 }
