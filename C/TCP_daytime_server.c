@@ -66,7 +66,7 @@ int main(int argc, char *argv[]) {
 	/* checking for SIGTERM; when SIGTERM caught call cleanup_exit */
 	signal(SIGTERM, cleanup_exit);
 
-	/* have socket s wait and accept connecitons until shut_down; which is  triggered by SIGTERM */
+	/* have socket wait and accept connecitons until shut_down; which is  triggered by SIGTERM */
 	while (!shut_down) {
 		/* set read file descriptors to watch socket s to see when it has input */
 		FD_ZERO(&readFDS);
