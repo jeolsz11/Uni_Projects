@@ -1,5 +1,5 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Client side of string manipulation over TCP communication
+Server side of string manipulation over TCP communication
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 #include <sys/socket.h>
