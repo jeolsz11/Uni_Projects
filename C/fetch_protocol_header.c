@@ -1,7 +1,7 @@
-/*
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * Fetch protocol: download a file from a fetch server
  * J.A. Jerkins <jajerkins@una.edu>, 03/16/2021
- */
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 #ifndef PROTOCOL_H
 #define PROTOCOL_H
