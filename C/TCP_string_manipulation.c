@@ -100,7 +100,6 @@ int main(int argc, char *argv[]) {
 
 			/* deconstruct packet(buf) into parts */
 			dissasemble_packet(buf, opcode, payload);
-			//printf("packet disassembled: [%s]:[%s]\n", opcode, payload);
 
 			/* check opcode for operations; then perform said operation */
 			if (opcode[1] == 'P') {
