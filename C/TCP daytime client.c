@@ -18,9 +18,8 @@ Simple TCP daytime client code in C
 #define SERVER_PORT 5012
 #define MAX_LINE 29
 
-int main(int argc, char *argv[])
-{
-	struct sockaddr_in serveraddr;
+int main(int argc, char *argv[]) {
+    struct sockaddr_in serveraddr;
     char buf[MAX_LINE];
     char *host;
     struct hostent *hp;
@@ -29,7 +28,8 @@ int main(int argc, char *argv[])
     /* "get" host's name from command line */
     if (argc == 2) {
         host = argv[1];
-    } else {
+    } 
+	else {
         errx(EXIT_FAILURE, "Could not find host \n");
     }
 
