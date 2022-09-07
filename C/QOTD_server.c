@@ -90,13 +90,9 @@ main(int argc, char *argv[])
             errx(EXIT_FAILURE, "SIGNAL ISSUE \n");
         }
 
-        if (client_s > 0) 
-        {
-printf("a packet is going to be sent to the client");            
+        if (client_s > 0) {
             choose_quote(buf);
-printf("packet being sent to client: [%s]", buf);
             buf[strcspn(buf, "\n")] = '\0'; 
- printf("packet back to client post buf[strcspan]: [%s]", buf);
             
             /* send packet(buf) to client */
             send(client_s, buf, sizeof(buf), 0);
