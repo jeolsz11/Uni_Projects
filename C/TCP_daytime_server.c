@@ -31,7 +31,7 @@ void cleanup_exit(int);
 volatile sig_atomic_t shut_down; //global varible
 
 int main(int argc, char *argv[]) {
-	struct sockaddr_in serveraddr;
+    struct sockaddr_in serveraddr;
 	struct timeval tout;
 	fd_set readFDS;
 	char buf[MAX_LINE];
