@@ -23,8 +23,7 @@ Client side of the "Quote of the Day" system
 #define MAX_CHARACTERS 512
 
 int
-main(int argc, char *argv[])
-{
+main(int argc, char *argv[]) {
     struct sockaddr_in server_addr;
     char buf[MAX_CHARACTERS+1];
     char *host;
@@ -32,19 +31,16 @@ main(int argc, char *argv[])
     int s; //socket
 
     /* "get" host's name from command line */
-    if (argc == 2) 
-    {
+    if (argc == 2) {
         host = argv[1];
     } 
-    else
-    {
+    else {
         errx(EXIT_FAILURE, "COULD NOT FIND HOST \n");
     }
 
     /* translate host name into peer's IP address */
     hp = gethostbyname(host);
-    if (hp == NULL)  
-    {
+    if (hp == NULL) {
         errx(EXIT_FAILURE, "COULD NOT FIND IP ADDRESS %s\n", host);
     }
 
@@ -55,14 +51,12 @@ main(int argc, char *argv[])
     server_addr.sin_port = htons(SERVER_PORT);
 
     /* create socket s */
-    if ((s = socket(PF_INET, SOCK_STREAM, 0)) < 0) 
-    {
+    if ((s = socket(PF_INET, SOCK_STREAM, 0)) < 0) {
         errx(EXIT_FAILURE, "CLIENT SOCKET CREATION ERROR \n");
     }
 
     /* connect to server */
-    if (connect(s, (struct sockaddr *)&server_addr, sizeof server_addr) < 0)
-    {
+    if (connect(s, (struct sockaddr *)&server_addr, sizeof server_addr) < 0) {
         errx(EXIT_FAILURE, "CLIENT CONNECTION ERROR \n");
     }
 
