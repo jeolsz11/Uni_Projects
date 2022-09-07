@@ -1,8 +1,7 @@
-/*------------------------------------------------------------------------
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Program to manage a clinic's customers and their payments. 
-------------------------------------------------------------------------*/
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-// Import statement for the Scanner class
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -11,7 +10,7 @@ public class CustomerLabTesting {
     //Create a Scanner object to read input.
     public static Scanner keyboard = new Scanner(System.in); 
 
-// -------------------- Main --------------------   
+	// -------------------- Main --------------------   
 	public static void main(String[] args){
         int num_add;
         
@@ -34,11 +33,7 @@ public class CustomerLabTesting {
 }
 
 class Customer {
-    //Globel Variables (ones that can be used by all methods)
-    //Create a Scanner object to read input.
     public static Scanner keyboard = new Scanner(System.in); 
-
-// Private fields
 	private String first_name = " ";
 	private String last_name = " ";
 	private int depart_num = 0;
@@ -47,7 +42,7 @@ class Customer {
 	private int cost_test = 120;
 	private int ID = 10000;
 	private String customer_ID = " ";
-// Constructor 
+
     public Customer() {
 		System.out.print("\n>> Customer first name: ");
 		first_name = keyboard.nextLine();
@@ -61,14 +56,14 @@ class Customer {
 	}
     
 // -------------------- Methods --------------------
-//method to Generate Customer ID
+	//method to Generate Customer ID
     private String setCustomerID() {
         //concatenate ints by having compiler convert them to strings
         customer_ID = depart_num + "" + ID;
         return customer_ID;
     }
     
-//method to Add the lab tests and finding the amount to be paid by the customer
+	//method to Add the lab tests and finding the amount to be paid by the customer
     public void addLabTest() {
         String test = " ";
         // Loop to add the lab tests  
@@ -85,12 +80,12 @@ class Customer {
         }
     }
     
-//method to View the balance
+	//method to View the balance
     public void viewBalance() {
         System.out.println("    Current balance: $" + balance);
     }  
     
-//method to Pay the balance
+/	/method to Pay the balance
     public void payBalance() {
         int payment;
         
@@ -110,7 +105,7 @@ class Customer {
         viewBalance();
     } 
     
-//method to Show the information
+	//method to Show the information
     public void displayEntry() {
         System.out.println("\n - - - - - - - - - - - - - - - - - - - -");
         System.out.println("    Customer info: " + first_name + " " + last_name);
