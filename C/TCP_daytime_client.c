@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
     if (argc == 2) {
         host = argv[1];
     } 
-	else {
+    else {
         errx(EXIT_FAILURE, "Could not find host \n");
     }
 
